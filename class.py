@@ -43,9 +43,11 @@ class Lamborgini(Detail):
 
 
 
-nis=Nissan(model="maxima",productCreate_Y=1396,Price=2000000,Company="NISSAN",Engine="V-8",Option="P",type="sport")
+nis=Nissan(model="maxima",productCreate_Y=1996,Price=20000000,Company="NISSAN",Engine="V-8",Option="P",type="sport")
 
-
+print(nis.productCreate_Y)
+print(nis.creator)
+print(nis.price)
 
 
 
