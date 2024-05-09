@@ -56,26 +56,33 @@ class App(Frame):
         self.buttonRegister=Button(self.master,text="Register")
         self.buttonRegister.bind("<Button-1>",self.onClickRegister)
         self.buttonRegister.place(x=80,y=120)
+        self.buttonRegister.configure(bg="#1E1E1E", fg="white")
 
         self.buttonSearch=Button(self.master,text="Search")
         self.buttonSearch.bind("<Button-1>",self.onClickSearch)
         self.buttonSearch.place(x=70,y=400)
+        self.buttonSearch.configure(bg="#1E1E1E", fg="white")
 
         self.buttondelete=Button(self.master,text="Delete")
         self.buttondelete.bind("<Button-1>",self.onClickDelete)
         self.buttondelete.place(x=200,y=120)
+        self.buttondelete.configure(bg="#1E1E1E", fg="white")
 
         self.buttonUpdate=Button(self.master,text="Update")
+        self.buttonUpdate.configure(bg="#1E1E1E", fg="white")
         self.buttonUpdate.bind("<Button-1>", self.onClickUpdate)
         self.buttonUpdate.place(x=80,y=200)
     def lable(self):
         self.lableName=Label(self.master,text="Name")
         self.lableName.place(x=30,y=10)
+        self.lableName.configure(bg="#1E1E1E", fg="white")
 
         self.lablePrice=Label(self.master,text="Price")
         self.lablePrice.place(x=30,y=40)
+        self.lablePrice.configure(bg="#1E1E1E", fg="white")
 
         self.lableQuantity=Label(self.master,text="Quantity")
+        self.lableQuantity.configure(bg="#1E1E1E",fg="white")
         self.lableQuantity.place(x=30,y=80)
 
     def table(self):
@@ -173,6 +180,7 @@ if __name__ == '__main__':
     root = Tk()
 
     root.geometry('1000x500')
+    root.configure(bg="#1E1E1E")
     app = App(root)
 
     root.mainloop()
